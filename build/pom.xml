@@ -134,10 +134,14 @@
 
         <!-- For docker image-->
         <image.publish.skip>true</image.publish.skip>
+        <!--suppress UnresolvedMavenProperty -->
         <image.name>${IMAGE_NAME}</image.name>
         <image.tags>latest</image.tags>
 
         <dependencies.copy.skip>true</dependencies.copy.skip>
+
+        <sonar.organization>therubenation</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <build>
